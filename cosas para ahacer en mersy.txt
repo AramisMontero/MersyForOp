@@ -1,0 +1,70 @@
+
+
+en facturacion validan la cobertura 
+
+ y facturacion , dentro de paciente del detalle, en la cual vamos a 
+
+
+
+en la opcion de historia clinica crear una nueva opcion para administracion de disponibilidad, crear las areas y cada area tiene una cantidad de  camas disponibles 
+
+ 
+ 
+ 
+
+pantalla que nos dice la cantididad disponible que sera igual a la cantidad registrada menos la cantidad utilizada
+
+ 
+ 
+seleccionamos al area que va
+
+mostrar la disponibilidad
+ cuando se va a dar el alta debe aparecer  y aparce disponible la cama
+ 
+ 
+cama de ingreso (  que tendran un estatus disponible y no disponible)
+dar de alta 
+
+
+
+en el caso de el descuento puedo escoger porcentual o por monto
+
+voy agregando la factura, donde posteriormente se pueda ir a$adiendo
+iniciado 
+
+
+reporte de cobertura por ars para posteriormente enviar a lacuenta por cobrar
+por fecha en la que hice la cobertura, referencia fulano 
+
+
+ 
+
+inmediatamente me crea un registro en tabla de CxC a nombre de la ars con ref del codigo de paciente numero de seguro, nombre y monto de cobertura
+
+pantalla nueva para c*c donde tendre la factura por la diferencia del monto cubierto menos lo pagado, y tendre un estatus pendiente de pago, que se pueda filtrar por dia y por mes, y que me permita imprimir todas las facturas de un fuetazo
+
+opciond e imagenes, donde pongamos tipo 
+
+
+pantala aparte adm ars 
+donde cada ars va a tener un detalle de servicio y la cobertura que da
+eso se elimentara de un excel
+
+en opciones poner un orden para sacar por orden para que facturacion este primero
+
+hay cosas que no son editables 
+
+
+en cardiologia se necesita motivo de consulta y evolucion del paciente 
+
+riesgo de procedimiento quitarlo 
+
+y poner lo siguiente MAPA y Holter 
+
+abajo de eso diagnostico y tratamiento.
+
+diagnostico de consulta cambiar por motivo de consulta
+y agregar evolucion del paciente
+
+
+

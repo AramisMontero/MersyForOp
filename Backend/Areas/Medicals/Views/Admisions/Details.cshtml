@@ -1,0 +1,106 @@
+﻿@model Domain.MED.Admision
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Admision</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.Record2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.Record2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoctorAutorization)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoctorAutorization)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NurseAdmision)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NurseAdmision)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observations)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observations)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExitDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExitDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExitHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExitHour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExitDoctor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExitDoctor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdmisionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
