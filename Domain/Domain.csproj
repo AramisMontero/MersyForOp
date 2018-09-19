@@ -104,9 +104,9 @@
     <Compile Include="MED\BloodType.cs" />
     <Compile Include="MED\Insurance.cs" />
     <Compile Include="MED\Patient.cs" />
-    <Compile Include="Migrations\201808251439168_init.cs" />
-    <Compile Include="Migrations\201808251439168_init.Designer.cs">
-      <DependentUpon>201808251439168_init.cs</DependentUpon>
+    <Compile Include="Migrations\201809041412030_initialMigration.cs" />
+    <Compile Include="Migrations\201809041412030_initialMigration.Designer.cs">
+      <DependentUpon>201809041412030_initialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,8 +133,8 @@
     <Content Include="ScriptInicial.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808251439168_init.resx">
-      <DependentUpon>201808251439168_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809041412030_initialMigration.resx">
+      <DependentUpon>201809041412030_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
