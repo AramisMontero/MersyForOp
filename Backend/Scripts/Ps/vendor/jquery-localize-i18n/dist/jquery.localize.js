@@ -71,7 +71,7 @@ http://keith-wood.name/localisation.html
       ajaxOptions = {
         url: file,
         dataType: "json",
-        async: false,
+        async: true,
         timeout: options.timeout != null ? options.timeout : 500,
         success: successFunc,
         error: errorFunc

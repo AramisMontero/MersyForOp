@@ -35,9 +35,9 @@ namespace Backend
 
             bundles.Add(new ScriptBundle("~/bundles/others").Include(
                 "~/Scripts/datetimepicker/moment.js",
-                "~/Scripts/bootstrap.js",
-                "~/Scripts/respond.js",
-                "~/Scripts/datetimepicker/bootstrap-datetimepicker.js",
+                "~/Scripts/bootstrap.min.js",
+                "~/Scripts/respond.min.js",
+                "~/Scripts/datetimepicker/bootstrap-datetimepicker.min.js",
                 "~/Scripts/Ps/js/fileupload.js",
                 "~/Scripts/maskedinput/jquery.maskedinput.min.js",
                 "~/Scripts/Ps/vendor/jQuery-Storage-API/jquery.storageapi.js",
@@ -55,7 +55,7 @@ namespace Backend
 
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                         "~/Content/bootstrap.css",
+                         "~/Content/bootstrap.min.css",
                           "~/Content/site.css",
                          "~/Scripts/Ps/vendor/fontawesome/css/font-awesome.min.css",
                          "~/Scripts/Ps/vendor/simple-line-icons/css/simple-line-icons.css",

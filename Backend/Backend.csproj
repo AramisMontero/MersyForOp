@@ -441,6 +441,8 @@
     <Content Include="Content\Icons\histanaliticold.png" />
     <Content Include="Content\Icons\inventory.png" />
     <Content Include="Content\Icons\labadm.png" />
+    <Content Include="Content\Icons\LargeLogoMercy.png" />
+    <Content Include="Content\Icons\MediumLogoMercy.png" />
     <Content Include="Content\Icons\network.png" />
     <Content Include="Content\Icons\ortopeda.png" />
     <Content Include="Content\Icons\ortopedia.png" />
@@ -460,6 +462,7 @@
     <Content Include="Content\Icons\obstetric.png" />
     <Content Include="Content\Icons\pediatric.png" />
     <Content Include="Content\Icons\LogoMercy.jpg" />
+    <Content Include="Content\Icons\SmallLogoMercy.png" />
     <Content Include="Content\Icons\suplier.png" />
     <Content Include="Content\Icons\surgery.png" />
     <Content Include="Content\Icons\unids.png" />
@@ -475,15 +478,29 @@
     <Content Include="Content\Productos\Icon-Small-40%403x.png" />
     <Content Include="ExternalLibs\CommonTasks.HelperLib.dll" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Areas\Configurations\Views\web.config" />
     <Content Include="Areas\Configurations\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Configurations\Views\Shared\_Layout.cshtml" />
@@ -557,9 +574,15 @@
     <Content Include="Areas\Pos\Views\Users\CreateRolForUser.cshtml" />
     <Content Include="Areas\Pos\Views\Users\EditRolForUser.cshtml" />
     <Content Include="Areas\Pos\Views\Users\IndexRolForUser.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\Things.txt" />
     <Content Include="Scripts\bootstrap.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -862,8 +885,12 @@
     <Content Include="Scripts\Ps\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
     <Content Include="Scripts\Ps\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
     <Content Include="Scripts\Ps\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
-    <Content Include="Translation\site-en.json" />
-    <Content Include="Translation\site-es.json" />
+    <Content Include="Translation\site-en.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Translation\site-es.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Manage\EditDoctorInformation.cshtml" />
     <Content Include="Views\Manage\CreateDoctorInformation.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />

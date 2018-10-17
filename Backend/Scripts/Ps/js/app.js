@@ -153,6 +153,7 @@
         // set initial options
         var opts = {
             language: currLang,
+            async: true,
             pathPrefix: pathPrefix,
             callback: function (data, defaultCallback) {
                 $.localStorage.set(storageKey, currLang); // save the language
