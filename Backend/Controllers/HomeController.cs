@@ -54,6 +54,67 @@ namespace Backend.Controllers
             return View();
         }
 
+        public ActionResult Print1()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+
+        public ActionResult Print2()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print3()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print4()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print5()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print6()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print7()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print8()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print9()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
+        public ActionResult Print10()
+        {
+            ViewBag.Message = "Mersy";
+
+            return View();
+        }
         public ActionResult Contact()
         {
             ViewBag.Message = "PraySoft";

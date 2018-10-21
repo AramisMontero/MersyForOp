@@ -897,6 +897,16 @@
     <Content Include="Views\Manage\EditSmtp.cshtml" />
     <Content Include="Views\Manage\CreateSmtp.cshtml" />
     <Content Include="Scripts\Ps\js\jsapi" />
+    <Content Include="Views\Home\Print1.cshtml" />
+    <Content Include="Views\Home\Print5.cshtml" />
+    <Content Include="Views\Home\Print2.cshtml" />
+    <Content Include="Views\Home\Print3.cshtml" />
+    <Content Include="Views\Home\Print4.cshtml" />
+    <Content Include="Views\Home\Print6.cshtml" />
+    <Content Include="Views\Home\Print10.cshtml" />
+    <Content Include="Views\Home\Print9.cshtml" />
+    <Content Include="Views\Home\Print8.cshtml" />
+    <Content Include="Views\Home\Print7.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Pos\Models\" />

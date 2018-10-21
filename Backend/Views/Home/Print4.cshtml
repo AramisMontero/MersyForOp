@@ -1,0 +1,394 @@
+﻿@{
+    Layout = "";
+}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <style>
+        .inv-container {
+            font-family: 'Lato', sans-serif;
+            margin: 20px auto;
+            max-width: 650px;
+        }
+
+        .inv-note {
+            font-weight: 400;
+            font-style: italic;
+            color: #333;
+            line-height: 140%;
+            padding: 0 5px 20px 5px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+
+        .inv-header {
+            margin: 30px 5px;
+            color: #aaa;
+            vertical-align: top;
+        }
+
+            .inv-header div {
+                display: inline-block;
+                width: 45%;
+            }
+
+        .inv-date {
+            margin-right: 5%;
+        }
+
+            .inv-date span {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+                .inv-date span b {
+                    display: inline-block;
+                    min-width: 120px;
+                }
+
+        .inv-title {
+            text-align: right;
+        }
+
+            .inv-title h1 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .inv-title span {
+                font-size: 0.8em;
+                margin-top: 5px;
+            }
+
+        .inv-table {
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+            .inv-table thead {
+                background-color: #efefef;
+            }
+
+            .inv-table th,
+            td {
+                padding: 5px;
+            }
+
+            .inv-table tfoot td {
+                text-align: right;
+            }
+
+            .inv-table td.total {
+                border-top: 1px solid #eee;
+            }
+
+        .inv-pay {
+            margin: 20px;
+            text-align: center;
+        }
+        /* utility */
+        .u-left {
+            text-align: left;
+        }
+
+        .u-mid {
+            text-align: center;
+        }
+
+        .u-right {
+            text-align: right;
+        }
+        /* responsive table 🎷 */
+        @@media only screen and (max-width: 650px) {
+            .inv-note {
+                padding: 10px 20px 30px 20px;
+            }
+
+            .inv-header div {
+                display: block;
+                width: auto;
+                margin-left: 15px;
+            }
+
+            .inv-title {
+                text-align: left;
+            }
+
+                .inv-title h1 {
+                    display: none;
+                }
+
+            table.inv-table,
+            .inv-table thead,
+            .inv-table tbody,
+            .inv-table tfoot,
+            .inv-table th,
+            .inv-table tr,
+            .inv-table td {
+                display: block;
+            }
+
+                .inv-table thead tr {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+
+            .inv-table td {
+                position: relative;
+                padding-left: 35%;
+                text-align: left;
+            }
+
+                .inv-table td:before {
+                    position: absolute;
+                    top: 5px;
+                    left: 18px;
+                    width: 30%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    color: #777;
+                    text-align: left;
+                }
+
+            .inv-table tbody tr {
+                margin-bottom: 10px;
+                padding-top: 10px;
+            }
+
+                .inv-table tbody tr:nth-child(even) {
+                    border-top: 1px solid #eee;
+                }
+
+            .inv-table tbody td:nth-of-type(1)::before {
+                content: 'Item';
+            }
+
+            .inv-table tbody td:nth-of-type(2)::before {
+                content: 'Quantity';
+            }
+
+            .inv-table tbody td:nth-of-type(3)::before {
+                content: 'Rate';
+            }
+
+            .inv-table tbody td:nth-of-type(4)::before {
+                content: 'Amount';
+            }
+
+            .inv-table tfoot {
+                background-color: #eee;
+                padding-bottom: 10px;
+                margin-top: 10px;
+            }
+
+                .inv-table tfoot td {
+                    text-align: left;
+                }
+
+            .inv-table td.total {
+                border: 0;
+            }
+        }
+        /* template placeholder style */
+        .fillme {
+            background-color: #eee;
+            padding: 0 5px;
+            color: #777;
+        }
+
+            .fillme::before {
+                content: '[';
+            }
+
+            .fillme::after {
+                content: ']';
+            }
+
+            @@media all {
+	.page-break	{ display: none; }
+}
+
+@@media print {
+	.page-break	{ display: block; page-break-before: always; }
+}
+    </style>
+</head>
+<body>
+<div class="inv-container">
+    <div class="inv-note">
+        Hi <span class="fillme">client</span>, the following is an invoice for <span class="fillme">brief summary of work</span> completed recently. It's been a pleasure working with you, and I hope we can again in the near future.
+    </div>
+    <div class="inv-header">
+        <div class="inv-date">
+            <span><b>Invoice Date</b>March 5, 2017</span>
+            <span><b>Due Date</b>March 31, 2017</span>
+        </div>
+        <div class="inv-title">
+            <h1>Invoice</h1>
+            <span><i>Amounts in CAD</i></span>
+        </div>
+    </div>
+    <table class="inv-table">
+        <thead>
+        <tr>
+            <th class="u-left">Item</th>
+            <th class="u-mid">Quantity</th>
+            <th class="u-right">Rate</th>
+            <th class="u-right">Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- TODO: generate items with JS -->
+        <tr>
+            <td class="u-left">Domain registration (at cost)</td>
+            <td class="u-mid">1</td>
+            <td class="u-right">12.99</td>
+            <td class="u-right">12.99</td>
+        </tr>
+        <tr>
+            <td class="u-left">Development work (hours)</td>
+            <td class="u-mid">10</td>
+            <td class="u-right">50</td>
+            <td class="u-right">500.00</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td />
+            <td colspan="2" class="total">Subtotal</td>
+            <td class="total">512.99</td>
+        </tr>
+        <tr>
+            <td />
+            <td colspan="2">Tax @@ 13%</td>
+            <td>61.56</td>
+        </tr>
+        <tr>
+            <td />
+            <td colspan="2" class="total">Total</td>
+            <td class="total">579.68</td>
+        </tr>
+        </tfoot>
+    </table>
+    <div class="inv-pay">
+        <form action="" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key=""
+                    data-amount="57968"
+                    data-name="Stripe Invoice Template"
+                    data-description="Development consulting"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto"
+                    data-zip-code="true">
+            </script>
+        </form>
+    </div>
+    <div class="inv-notefinal u-mid">Thank you 🙂</div>
+</div>
+<div class="page-break"></div>
+<div class="inv-container">
+    <div class="inv-note">
+        Hi <span class="fillme">client</span>, the following is an invoice for <span class="fillme">brief summary of work</span> completed recently. It's been a pleasure working with you, and I hope we can again in the near future.
+    </div>
+    <div class="inv-header">
+        <div class="inv-date">
+            <span><b>Invoice Date</b>March 5, 2017</span>
+            <span><b>Due Date</b>March 31, 2017</span>
+        </div>
+        <div class="inv-title">
+            <h1>Invoice</h1>
+            <span><i>Amounts in CAD</i></span>
+        </div>
+    </div>
+    <table class="inv-table">
+        <thead>
+        <tr>
+            <th class="u-left">Item</th>
+            <th class="u-mid">Quantity</th>
+            <th class="u-right">Rate</th>
+            <th class="u-right">Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- TODO: generate items with JS -->
+        <tr>
+            <td class="u-left">Domain registration (at cost)</td>
+            <td class="u-mid">1</td>
+            <td class="u-right">12.99</td>
+            <td class="u-right">12.99</td>
+        </tr>
+        <tr>
+            <td class="u-left">Development work (hours)</td>
+            <td class="u-mid">10</td>
+            <td class="u-right">50</td>
+            <td class="u-right">500.00</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td />
+            <td colspan="2" class="total">Subtotal</td>
+            <td class="total">512.99</td>
+        </tr>
+        <tr>
+            <td />
+            <td colspan="2">Tax @@ 13%</td>
+            <td>61.56</td>
+        </tr>
+        <tr>
+            <td />
+            <td colspan="2" class="total">Total</td>
+            <td class="total">579.68</td>
+        </tr>
+        </tfoot>
+    </table>
+    <div class="inv-pay">
+        <form action="" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key=""
+                    data-amount="57968"
+                    data-name="Stripe Invoice Template"
+                    data-description="Development consulting"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto"
+                    data-zip-code="true">
+            </script>
+        </form>
+    </div>
+    <div class="inv-notefinal u-mid">Thank you 🙂</div>
+</div>
+<script type="text/javascript">var n = 3;
+    //var pp = this.getPrintParams();
+    //pp.NumCopies=eval(n);
+    //this.print({bUI: false,bSilent: true,bShrinkToFit: true,printParams:pp});
+//        var n = 3;
+
+//    var pp = this.getPrintParams();
+
+////here is the magic
+//    pp.NumCopies=eval(n);
+
+//    //this.print(pp);
+//   // window.print(pp);
+//    window.onload = function() { window.print(pp); }
+</script>
+<script type="text/javascript">
+//    var n = 3;
+
+//    var pp = this.getPrintParams();
+
+////here is the magic
+//    pp.NumCopies=eval(n);
+
+//    //this.print(pp);
+     window.print();
+    //window.print(); window.print();
+    //this.print({ bUI: false, bSilent: true, bShrinkToFit: true });
+    //this.print({ bUI: false, bSilent: true, bShrinkToFit: true });
+</script>
+<script>
+   
+</script>
+</body>
